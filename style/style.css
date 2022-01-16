@@ -3,7 +3,7 @@
 body{
     font-family: 'Poppins';
     font-weight: 700;
-    margin: 0 10%;
+    margin: 0;
 }
 /* nav style */
 .nav-container{
@@ -52,7 +52,6 @@ header{
     color: white;
     padding: 10px 30px;
     border-radius: 19px;
-
 }
 .header-left a .fa-arrow-right{
     margin-left: 10px;
@@ -63,6 +62,10 @@ header{
 }
 .header-right img{
     width:68%;
+    transition: transform 1s ease-in-out;
+}
+.header-right img:hover{
+    transform: scale(1.2,1.3);
 }
 /* header end */
 
@@ -119,6 +122,9 @@ header{
     line-height: 7px;
     font-weight: 600;
 }
+.see-more-container{
+    margin-right: 20px;
+}
 .see-more{
     margin: 50px 0;
     display: flex;
@@ -126,11 +132,72 @@ header{
     margin-right: 12%;
 }
 .see-more a{
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: #E02C6D;
 }
+/* popular section end */
 
+/* review section */
+.review-section{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    display: flex;
+}
+.review-text{
+    margin: 0 40px;
+    padding-left: 60px;
+}
+.review-text h1{
+    font-size: 40px;
+}
+.review-text p{
+    font-weight: 500;
+    font-size: 18px;
+}
+.review-text a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 30px;
+    border-radius: 19px;
+}
+.explore-btn{
+    padding-top: 20px;
+}
+.canon-image img{
+    width: 500px;
+}
+/* review section end */
+
+
+/* Footer Section */
+
+.container-footer{
+    background-color: #101010;
+    text-align: center;
+}
+.container-footer h2{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+.container-footer p{
+    color: #D9DBE1;
+    font-size: 14px;
+    line-height: 6px;
+    margin-bottom: 30px;
+}
+.container-footer i{
+    color: #D9DBE1;
+    margin: 0px 16px;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
 /* media query for mobile devices */
 @media only screen and (max-width: 688px) {
     body{
@@ -202,6 +269,50 @@ header{
         margin-right: 8%;
     }
     /* popular section end */
+
+
+    /* review section start */
+    .review-section{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+        display: flex;
+    }
+    .review-text{
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+    }
+    .review-text h1{
+        font-size: 40px;
+    }
+    .review-text p{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .review-text a{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+
+    .canon-image{
+        width: 100%;
+    }
+    .canon-image img{
+        width: 300px;
+    }
+    .review-section{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+        display: block;
+        padding-bottom: 50px;
+    }
+    .see-more-container{
+        margin-right: 0px;
+    }
 }
 
 /* media query for Tablet devices */
@@ -238,7 +349,7 @@ header{
 
 
     /* popular section start */
-    .popular-container{
+   .popular-container{
         margin: 0;
         padding-top: 100px;
     }
@@ -256,6 +367,28 @@ header{
     .product img{
         width: 300px;
     }
+    
     /* popular section end */
+
+    /* review section start */
+    .review-section{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-right: 0;
+        margin-bottom: 80px;
+    }
+    .canon-image{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .canon-image img{
+        width: 100%;
+        height: auto;
+    }
+    .see-more{
+        margin-right: 1%;
+    }
 
 }
