@@ -26,7 +26,7 @@ body{
     text-decoration: none;
     color: black;
 }
-/* header style */
+/* header start */
 header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -58,15 +58,78 @@ header{
     margin-left: 10px;
 }
 .header-right{
-    /* margin-right: 70px; */
-    
     display: flex;
     justify-content: end;
 }
 .header-right img{
     width:68%;
 }
+/* header end */
 
+/* popular section start */
+.popular-container{
+    margin: 0 10%;
+    margin-top: 150px;
+}
+.popular-collection{
+    margin-bottom: 70px;
+    font-size: 30px;
+    text-align: center;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 35px;
+    grid-column-gap: 10px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+.product img{
+    width: 330px;
+    border-radius: 9px;
+    margin: 0 auto;
+}
+.product-info{
+    width: 350px;
+    padding-left: 25px;
+}
+.product-info h2{
+    font-weight: 600;
+    font-size: 28px;
+}
+.price{
+    font-weight: 500;
+    font-size: 24px;
+}
+.star-icon{
+    color: #FB8200;
+}
+.gray-color{
+    color: #787885;
+}
+.product-text{
+    line-height: 7px;
+    font-weight: 600;
+}
+.see-more{
+    margin: 50px 0;
+    display: flex;
+    justify-content: end;
+    margin-right: 12%;
+}
+.see-more a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #E02C6D;
+}
 
 /* media query for mobile devices */
 @media only screen and (max-width: 688px) {
@@ -112,6 +175,33 @@ header{
         margin-top: 40px;
         justify-content: center;
     }
+    /* header section end */
+
+    /* popular section start */
+    .popular-container{
+        margin: 0;
+        padding-top: 70px;
+    }
+    .products{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 35px;
+    }
+
+    .product{
+        width: 300px;
+    }
+    .product-info{
+        width: 300px;
+        padding-left: 25px;
+    }
+    .product img{
+        width: 300px;
+    }
+    .see-more{
+        margin: 40px 0;
+        margin-right: 8%;
+    }
+    /* popular section end */
 }
 
 /* media query for Tablet devices */
@@ -132,6 +222,10 @@ header{
     .brand h2{
         margin-left: 25px;
     }
+    /* nav end */
+
+
+    /* header section start */
     header{
         margin: 0 4%;
     }
@@ -140,5 +234,28 @@ header{
         width: 100%;
         height: 80%;
     }
+    /* header section end */
+
+
+    /* popular section start */
+    .popular-container{
+        margin: 0;
+        padding-top: 100px;
+    }
+    .products{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 35px;
+    }
+    .product{
+        width: 300px;
+    }
+    .product-info{
+        width: 300px;
+        padding-left: 25px;
+    }
+    .product img{
+        width: 300px;
+    }
+    /* popular section end */
 
 }
